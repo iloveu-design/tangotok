@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "360250360338",
+    "project_id": "tangotok-ee127",
+    "storage_bucket": "tangotok-ee127.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:360250360338:android:63e68efef7163a9fc40ecb",
+        "android_client_info": {
+          "package_name": "com.example.tangotok"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAQEfwmMma9gKgz4SeudgFDtFyn7XeUoak"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

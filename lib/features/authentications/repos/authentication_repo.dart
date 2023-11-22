@@ -20,19 +20,19 @@ class AuthenticationRepository {
     await _firebaseAuth.signOut();
   }
 
-  Future<void> SignIn(String email, String password) async {
+  Future<void> signIn(String email, String password) async {
     await _firebaseAuth.signInWithEmailAndPassword(
       email: email,
       password: password,
     );
   }
-
-  final authRepo = Provider((ref) => AuthenticationRepository());
-
-  final authState = StreamProvider(
-    (ref) {
-      final repo = ref.read(authRepo);
-      return repo.authStateChanges();
-    },
-  );
 }
+
+final authRepo = Provider((ref) => AuthenticationRepository());
+
+final authState = StreamProvider(
+  (ref) {
+    final repo = ref.read(authRepo);
+    return repo.authStateChanges();
+  },
+);

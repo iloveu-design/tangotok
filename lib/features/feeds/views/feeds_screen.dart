@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:tangotok/screens/widgets/footer_tab_bar.dart';
 
 class FeedsScreen extends ConsumerWidget {
   static const routeName = "/feeds";
@@ -7,6 +8,12 @@ class FeedsScreen extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    return Container();
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("Feed"),
+      ),
+      body: Container(),
+      bottomNavigationBar: FooterTabBar(),
+    );
   }
 }
