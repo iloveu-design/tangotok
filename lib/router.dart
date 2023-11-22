@@ -4,6 +4,7 @@ import 'package:tangotok/features/authentications/repos/authentication_repo.dart
 import 'package:tangotok/features/authentications/views/signUp_screen.dart';
 import 'package:tangotok/features/authentications/views/singIn_screen.dart';
 import 'package:tangotok/features/feeds/views/feeds_screen.dart';
+import 'package:tangotok/features/messages/views/messages_screen.dart';
 import 'package:tangotok/features/settings/views/settings_screen.dart';
 import 'package:tangotok/features/users/views/user_profile_screen.dart';
 
@@ -40,6 +41,10 @@ final routerProvider = Provider(
         GoRoute(
           path: SettingsScreen.routeName,
           builder: (context, state) => const SettingsScreen(),
+        ),
+        GoRoute(
+          path: MessagesScreen.routeName,
+          builder: (context, state) => const MessagesScreen(),
         ),
       ],
     );

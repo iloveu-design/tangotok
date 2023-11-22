@@ -39,6 +39,9 @@ class TangoTok extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     return MaterialApp.router(
       routerConfig: ref.watch(routerProvider),
+      themeMode: ref.watch(darkModeConfigProvider).darkMode
+          ? ThemeMode.dark
+          : ThemeMode.light,
       title: 'TangoTok',
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
@@ -52,7 +55,7 @@ class TangoTok extends ConsumerWidget {
         ),
         splashColor: Colors.transparent,
         appBarTheme: const AppBarTheme(
-          foregroundColor: Colors.black,
+          foregroundColor: Color.fromARGB(255, 20, 18, 18),
           backgroundColor: Colors.white,
           surfaceTintColor: Colors.white,
           elevation: 0,
